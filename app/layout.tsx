@@ -11,8 +11,8 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Eventify",
   description: "Eventify is a platform for event management.",
-  icons: {
-    icon: '/assets/images/logoe.svg'
+  icons:{
+    icon:'/assets/images/logoe.svg'
   }
 };
 

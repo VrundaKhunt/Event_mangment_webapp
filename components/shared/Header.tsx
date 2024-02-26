@@ -7,7 +7,7 @@ import MobileNav from "./MobileNav"
 
 const Header = () => {
   return (
-    <header className="w-full border-b">
+    <header className="w-full border-b sticky z-50 top-0 bg-white">
         <div className="wrapper flex items-center justify-between">
             <Link href='/' className="flex w-36">
                 <Image src="/assets/images/logoe.svg" width={124} height={38} alt="eventify logo"/>
