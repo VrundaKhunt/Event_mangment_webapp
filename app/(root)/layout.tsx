@@ -14,14 +14,14 @@ export default function RootLayout({
       <main className="flex-1">
         {children}
         
-      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-7P8L3DE44X"></Script>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-4EQHZ0RZQ8"></Script>
       <Script>
         {
           `
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-7P8L3DE44X');
+          gtag('config', 'G-4EQHZ0RZQ8');
          `
         }
 
