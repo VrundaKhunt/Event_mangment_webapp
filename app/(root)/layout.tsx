@@ -1,6 +1,7 @@
 import Footer from "@/components/shared/Footer";
 import Header from "@/components/shared/Header";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/react"
 
 export default function RootLayout({
   children,
@@ -10,7 +11,10 @@ export default function RootLayout({
   return (
     <div className="flex h-screen flex-col">
       <Header />
-      <main className="flex-1">{children}</main>
+      <main className="flex-1">
+        {children}
+        <Analytics/>
+      </main>
       <Script src="//code.tidio.co/9pxzmbvbk5i0rc12uenspxpze6jebbet.js" >
       </Script>
 
@@ -26,6 +30,7 @@ export default function RootLayout({
         }
 
       </Script>
+      
       <Footer />
     </div>
   );
